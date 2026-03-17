@@ -21,12 +21,12 @@ namespace ApiJugadoresDb.Features.Jugadores.AppServices
         public async Task<ApiResponse<Jugador>> ActualizarJugador(Jugador jugador)
         {
             ApiResponse<Jugador> apiResponseResult =
-                jugadoresDomainService.AgregarJugador(jugador);
+                jugadoresDomainService.ActualizarJugador(jugador);
             try
             {
                 if (apiResponseResult.Success)
                 {
-                    await jugadoresRepository.AgregarJugador(jugador);
+                    await jugadoresRepository.ActualizarJugador(jugador);
                 }
                 return apiResponseResult;
             }
