@@ -1,0 +1,6 @@
+@ApiJugadoresDb_HostAddress = http://localhost:5152
+
+GET {{ApiJugadoresDb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
