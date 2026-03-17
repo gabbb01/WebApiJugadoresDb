@@ -24,8 +24,8 @@ namespace ApiJugadoresDb.Controllers
         [HttpPost]
         public async Task<IActionResult> AgregarPosicion([FromBody] Posicion posicion)
         {
-            await posicionesAppService.AgregarPosicion(posicion);
-            return Ok();
+            var respuesta = await posicionesAppService.AgregarPosicion(posicion);
+            return Ok(respuesta);
         }
     }
 }

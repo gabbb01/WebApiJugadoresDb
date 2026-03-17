@@ -33,6 +33,7 @@ builder.Services.AddScoped<
     IPosicionesAppService,
     PosicionesAppService>();
 builder.Services.AddScoped<JugadoresDomainService>();
+builder.Services.AddScoped<PosicionesDomainService>();
 
 // Add services to the container.
 

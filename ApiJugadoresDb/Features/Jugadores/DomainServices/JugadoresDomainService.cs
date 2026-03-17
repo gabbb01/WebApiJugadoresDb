@@ -19,7 +19,7 @@ namespace ApiJugadoresDb.Features.Jugadores.DomainServices
                 apiResponse.Success = false;
                 apiResponse.Message = "El nombre del jugador no puede ir vacio";
             }
-            if (jugador.NumeroCamisa < 0)
+            if (int.IsNegative(jugador.NumeroCamisa))
             {
                 apiResponse.Success = false;
                 apiResponse.Message = "El numero de camisa no puede ser negativo";
